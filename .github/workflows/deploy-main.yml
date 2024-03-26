@@ -2,10 +2,10 @@ name: remote ssh command for deploy
 on:
   push:
     branches: [main]
-  jobs:
+jobs:
   build:
     name: Build
-     runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: executing remote ssh commands using key
         uses: appleboy/ssh-action@master
