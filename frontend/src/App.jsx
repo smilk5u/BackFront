@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
 import './App.css'
- 
+
 function App() {
   const [count, setCount] = useState(0)
   function getHello() {
     const greet = document.getElementById('greet')
-    fetch('http://localhost:4000/api/hello')
+    fetch(import.meta.env.VITE_API_SERVER + '/api/hello')
       .then(response => response.json())
       .then(data => greet.innerHTML = JSON.stringify(data))
   }
@@ -13,8 +13,8 @@ function App() {
   useEffect(getHello)
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="App">  
+      <header className="App-header"> 
         <p>Hello Vite + React!</p>
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
@@ -29,7 +29,7 @@ function App() {
         </p>
         <p>
           <a
-            className="App-link"
+            className="App-link" 
             href="https://reactjs.org"
             target="_blank"
             rel="noopener noreferrer"
