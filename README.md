@@ -1,4 +1,4 @@
-# React + API Server 프로젝트 개발과 배포
+React + API Server 프로젝트 개발과 배포 (CI/CD)
 - 프론트와 백엔드 프로젝트를 생성하고 배포 & 자동화하기
 
 <br>
